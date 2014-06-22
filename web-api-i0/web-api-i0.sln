@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web-api", "web-api-i0\web-api.csproj", "{0B55DDB1-F9B6-4B53-A733-D8B861C446CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web-api-test", "..\web-api-test\web-api-test.csproj", "{8407CC12-99F6-4A99-88C3-9C47E1E03316}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{94956D55-4E91-4D9D-8CD4-03AE7BF1BC5B}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B55DDB1-F9B6-4B53-A733-D8B861C446CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B55DDB1-F9B6-4B53-A733-D8B861C446CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B55DDB1-F9B6-4B53-A733-D8B861C446CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B55DDB1-F9B6-4B53-A733-D8B861C446CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8407CC12-99F6-4A99-88C3-9C47E1E03316}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8407CC12-99F6-4A99-88C3-9C47E1E03316}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8407CC12-99F6-4A99-88C3-9C47E1E03316}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8407CC12-99F6-4A99-88C3-9C47E1E03316}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
