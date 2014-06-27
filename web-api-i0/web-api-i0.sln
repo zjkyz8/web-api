@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{94956D
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBMigration", "..\DBMigration\DBMigration.csproj", "{246F5C0D-BDFC-4E98-A88F-5ED11A4D8223}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{8407CC12-99F6-4A99-88C3-9C47E1E03316}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8407CC12-99F6-4A99-88C3-9C47E1E03316}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8407CC12-99F6-4A99-88C3-9C47E1E03316}.Release|Any CPU.Build.0 = Release|Any CPU
+		{246F5C0D-BDFC-4E98-A88F-5ED11A4D8223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{246F5C0D-BDFC-4E98-A88F-5ED11A4D8223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{246F5C0D-BDFC-4E98-A88F-5ED11A4D8223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{246F5C0D-BDFC-4E98-A88F-5ED11A4D8223}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

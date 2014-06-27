@@ -26,6 +26,7 @@ namespace web_api_i0
         public static Container RegisterContainer()
         {
             var container = new Container();
+
             return container;
         }
     }

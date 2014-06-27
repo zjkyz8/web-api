@@ -13,10 +13,10 @@ namespace web_api_test
         {
             var httpClient = new HttpClient() {BaseAddress = new Uri(BaseUrl)};
             var response = httpClient.GetAsync("helloworld").Result;
-            dynamic readAsAsync = response.Content.ReadAsAsync<object>().Result;
+            dynamic helloWorld = response.Content.ReadAsAsync<object>().Result;
 
             Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
-            Assert.AreEqual("hello world", readAsAsync.message.ToString());
+            Assert.AreEqual("hello world", helloWorld.message.ToString());
         }
     }
 }

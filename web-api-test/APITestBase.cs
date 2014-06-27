@@ -15,6 +15,7 @@ namespace web_api_test
             var config = new HttpSelfHostConfiguration(BaseUrl);
             WebApiConfig.RegisterRoutes(config.Routes);
             WebApiConfig.RegisterFormatters(config.Formatters);
+            WebApiConfig.RegisterContainer();
             _server = new HttpSelfHostServer(config);
             _server.OpenAsync().Wait();
         }
