@@ -1,23 +1,24 @@
-﻿using System.Net.Http.Formatting;
-using System.Web;
+﻿using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
-using System.Web.Routing;
-using web_api_i0.App_Start;
+using SimpleInjector;
 
 namespace web_api_i0
 {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
     // visit http://go.microsoft.com/?LinkId=9394801
 
-    public class MvcApplication : HttpApplication
+    public class WebApiApplication : HttpApplication
     {
+        public static Container Container { get; private set; }
+
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-            WebApiConfig.RegisterRoutes(GlobalConfiguration.Configuration.Routes);
-            GlobalConfiguration.Configuration.Formatters.Add(new JsonMediaTypeFormatter());
-//            GlobalConfiguration.Configuration.Formatters.Add(new TextPlai/nFormatter());
+            HttpConfiguration httpConfiguration = GlobalConfiguration.Configuration;
+            WebApiConfig.RegisterRoutes(httpConfiguration.Routes);
+            WebApiConfig.RegisterFormatters(httpConfiguration.Formatters);
+            Container = WebApiConfig.RegisterContainer();
         }
     }
 }

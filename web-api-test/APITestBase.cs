@@ -1,6 +1,6 @@
 using System.Web.Http.SelfHost;
 using NUnit.Framework;
-using web_api_i0.App_Start;
+using web_api_i0;
 
 namespace web_api_test
 {
@@ -14,6 +14,7 @@ namespace web_api_test
         {
             var config = new HttpSelfHostConfiguration(BaseUrl);
             WebApiConfig.RegisterRoutes(config.Routes);
+            WebApiConfig.RegisterFormatters(config.Formatters);
             _server = new HttpSelfHostServer(config);
             _server.OpenAsync().Wait();
         }
